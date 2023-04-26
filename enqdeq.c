@@ -3,6 +3,7 @@
 
 void enqueue();
 void dequeue();
+void display();
 int queue[10];
 int front = -1;
 int rear = -1;
@@ -17,10 +18,11 @@ int main()
 	    scanf("%d",&choice);
 		switch (choice)
     	{
-		   case 1: enqueue();
-		   break;
-		   case 2: dequeue();
-		   break;
+		case 1: enqueue();
+		break;
+		case 2: dequeue();
+		break;
+		case 3: display();
     	}
     	
         printf("Do you want to continue? \n");
