@@ -62,7 +62,7 @@ void enqueue()
 
 void dequeue()
 {
-	if ((front==-1)||(front>rear))
+	if ((front==-1)||(front=rear+1))
 	{
 		printf("Underflow \n");
 	}
@@ -77,8 +77,22 @@ void dequeue()
 	}
 }
 
+void display ()
+ {
+    int i; 
+    if (array[i]==-1)
+	{
+		printf("Stack is empty");
+	}
+	else 
+	{
+		for (i=0;i<=9;i++)
+                {
+			printf("%d",array[i]);
+		}
+	 }
 
-
+}
 
 
 
